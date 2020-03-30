@@ -12,8 +12,8 @@ function checkPalindromo(parola) {
   var reverseArray = splitString.reverse();
   var parolaInvertita = reverseArray.join("");
   if (parola == parolaInvertita) {
-    alert("La parola è palindroma");
+    document.getElementById("messaggio").innerHTML = "La parola è palindroma: " + "parola originaria: " + parola + " " + "parola invertita: " + parolaInvertita;
   }else {
-    alert("La parola non è palindroma");
+    document.getElementById("messaggio").innerHTML = "La parola non è palindroma: " + "parola originaria: " + parola + " " + "parola invertita: " + parolaInvertita;
   }
 }
