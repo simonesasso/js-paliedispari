@@ -3,9 +3,14 @@
 // dò output a utente dicendogli che ho verificato;
 // qui sicuramente da cercare ci sarà il come revertare una parola.
 
-var parolaUtente = prompt("inserisci una parola");
+var parolaUtente;
+var iniziaGioco = document.getElementById("btn-inizia");
 
-checkPalindromo(parolaUtente);
+iniziaGioco.addEventListener("click",function functionName() {
+  parolaUtente = prompt("inserisci una parola");
+  checkPalindromo(parolaUtente);
+})
+
 
 function checkPalindromo(parola) {
   var splitString = parola.split("");
